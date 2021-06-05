@@ -1,2 +1,6 @@
 -r requirements.txt
 pytest==6.2.4
+pytest-cov==2.12.1
+pytest-xdist==2.2.1
+pytest-sugar==0.9.4
+pytest-picked==0.4.6
