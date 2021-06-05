@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  sh:
+    build:
+      context: .
+      target: prod
+    command: bash
+
+  test:
+    build:
+      context: .
+      target: test
+    working_dir: /opt/code
+    volumes:
+      - .:/opt/code
+    command: bash
