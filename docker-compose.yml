@@ -11,4 +11,8 @@ services:
 
   test:
     <<: *base
-    command: bash -c "pip install -e . && pytest -v --cov=src"
+    command: bash -c "pip install -e . && pytest"
+
+  picked:
+    <<: *base
+    command: bash -c "pip install -e . && pytest --picked"
