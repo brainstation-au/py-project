@@ -1,2 +1,5 @@
-def sum():
-    return 4
+def sum(a: int, b: int) -> int:
+    return a + b
+
+if __name__ == "__main__":
+    print(sum(5, 6))
