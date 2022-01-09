@@ -16,3 +16,7 @@ services:
   picked:
     <<: *base
     command: bash -c "pip install -e . && pytest --picked"
+
+  lint:
+    <<: *base
+    command: bash -c "find . -type f -name \"*.py\" | xargs pylint"

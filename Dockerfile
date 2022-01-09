@@ -3,7 +3,7 @@ FROM python:slim as prod
 WORKDIR /opt/code
 
 
-FROM python:slim as test
+FROM python:buster as test
 
 RUN apt update -y && apt install git -y
 
