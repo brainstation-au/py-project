@@ -20,3 +20,15 @@ services:
   lint:
     <<: *base
     command: bash -c "find . -type f -name \"*.py\" | xargs pylint"
+
+  task_a:
+    build:
+      context: .
+      target: prod
+    command: task_a --value-a 4 --value-b 5
+
+  task_b:
+    build:
+      context: .
+      target: prod
+    command: task_b --value-a 4 --value-b 5
